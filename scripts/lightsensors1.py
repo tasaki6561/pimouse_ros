@@ -1,7 +1,8 @@
 #!/usr/bin/env python
-import rospy
-rospy.init_node('buzzer')
-rospy.spin()
+import sys, rospy
+from pimouse_ros.msg import LightSensorValues
+
+rospy.init_node('lightsensors')
 
 # Copyright 2016 Ryuichi Ueda
 # Released under the BSD License.
